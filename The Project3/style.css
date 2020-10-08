@@ -1,0 +1,461 @@
+body {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Georgia, Tahoma, sans-serif;
+    }
+
+#dropdown-menu{
+    background-color: gray;
+}
+
+#nav-item-dropdown :hover{
+    background-color: gray;   
+}
+
+#nav-item-dropdown:hover .dropdown-item{
+    display: block;
+}
+
+#nav-link{
+    font-weight: bold;
+    color: green;
+}
+
+.active{
+    background-color: goldenrod;
+}
+
+.dropdown-item:hover{
+    border-bottom: 3px solid red;
+}
+
+.nav-item{
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+#carousel-inner2{
+    width: 50%;
+    float: left;
+    font-size: 80%;
+    font-style: italic;
+}
+
+#carousel-inner3{
+    width: 50%;
+    float: right;
+    font-size: 80%;
+    font-style: italic;
+}
+
+#carousel-inner4{
+    width: 55%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#carousel-inner5{
+    width: 40%;
+    float: right;
+    height: 500px;
+}
+
+.head6{
+    font-style: italic;
+    font-weight: bold;
+    color: green;
+}
+
+.head7{
+    /*text-decoration: underline;*/
+    font-style: italic;
+    font-weight: bold;
+    color: gold;
+}
+
+p.text{
+    color: black;
+}
+
+p.chem{
+    color: white;
+}
+
+#par{
+    font-style: italic;
+    color: black;
+}
+
+#hfour{
+    text-decoration: underline;
+    color: blue;
+    margin-left: 10px;
+    float: left;   
+}
+
+#hfour2:hover{
+    transform:translateX(-20px);
+}
+
+#hfour1{
+   margin-top: 200px;
+    top: 15px;
+    left: 10px;
+    text-decoration: underline;
+    color: blue;
+}
+
+#consumer-product img{
+    width: 100px;
+    height: 100px;
+    transition: width 2s height 4s;
+}
+
+#consumer-product img:hover{
+    width: 200px;
+    height: 150px;
+}
+
+#cont{
+    float: left;
+}
+
+/*------------------footer-----------------*/
+
+#footer1{
+    background-color: darkgreen;
+    color: lightgrey;
+    font-size: 90%;
+}
+
+#footer2{
+    background-color: darkgreen;
+    color: lightgrey;
+    font-size: 90%;
+}
+
+.foot{
+    text-decoration: underline;
+    text-align: left;
+}
+
+.copyright{
+    background-color: darkgreen;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 70%;
+}
+
+.tel{
+    font-size: 12px;
+}
+
+.email{
+    font-size: 12px;
+}
+
+.responsive10{
+    width: 50%;
+    height: auto;
+}
+
+/*-----------capabilities----------------*/
+
+h6{
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p{
+    font-style: italic;
+}
+
+#cap{
+    margin-left: 10px;
+}
+
+#cop{
+    text-decoration: underline;
+}
+
+.responsive3{
+    width: 22%;
+    height: auto;
+}
+
+.responsive4{
+    width: 50%;
+    height: auto;
+}
+
+.responsive5{
+    width: 15%;
+    height: auto;
+}
+
+/*-----------career--------------*/
+
+#career{
+    margin-left: 10px;
+}
+
+#career img:hover{
+    transform: rotateY(150deg);
+}
+
+/*-------------chairmanstatementpage----------*/
+
+h5{
+    font-style: italic;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.chair{
+    margin-left: 10px;
+}
+
+#chairm:hover{
+    transition: opacity 1s ease=ease-in-out;
+    opacity: 0.6;
+}
+
+#chairm{
+    float: left;
+}
+
+/*----------complaint----------*/
+
+#comp{
+    font-weight: bold;
+}
+
+#comp1{
+    font-style: italic;
+}
+
+/*-----------consumer product and groupcompanies----------*/
+
+#division img:hover{
+    width: 200px;
+}
+
+.responsive6{
+    width: 40%;
+    height: auto;
+}
+
+.responsive7{
+    width: 65%;
+    height: auto;
+}
+
+.responsive8{
+    width: 90%;
+    height: auto;
+}
+
+/*---------history----------*/
+
+h3{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+p{
+    font-style: italic;
+}
+
+#respon{
+    width: 400px;
+    height: 400px;
+    transition: width 2s;
+}
+
+#respon:hover{
+    width: 800px;
+}
+
+/*---------informationforstakeholder-------------*/
+
+#info{
+    text-align: center;
+    font-weight: bold;
+}
+
+.card-body{
+    font-weight: bold;
+}
+
+/*--------initiatives-------------*/
+
+#initial{
+    margin-left: 10px;
+}
+
+/*----------leadership-----------*/
+
+#leader{
+    margin-left: 10px;
+}
+
+.media img{
+    border-radius: 5px;
+
+}
+
+#medal img:hover{
+    transform:rotateX(360deg);
+	border-radius:50%;
+	transition:transform 2s;
+}
+
+.responsive2{
+    width: 22%;
+    height: auto;
+}
+
+/*--------machinery----------*/
+
+#mac{
+    margin-left: 20px;
+}
+
+.image{
+    float: right;
+}
+
+#mach:hover{
+    opacity: 0.6;  
+}
+
+.h{
+    color: blue;
+    text-align: center;
+}
+
+/*--------overview-----------*/
+
+.col-md-12 img:hover{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform-box: inherit;
+}
+
+.responsive{
+    width: 45%;
+    height: auto;
+}
+
+/*----------partners------------*/
+
+#part:hover{
+    transform:rotate(360deg);
+	border-radius:50%;
+    transition:transform 2s;
+    transform:translateY(-20px);
+}
+
+h4{
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+/*------------industrial chemicals------------*/
+
+}
+#hsix{
+    position: relative;
+    text-decoration: underline;
+}
+
+#hsix:hover{
+    transform:translateY(-20px); 
+}
+
+/*---------------ingredients----------------*/
+
+#responsive9{
+    width: 20%;
+    height: auto;
+}
+
+/*----------media contact------------------*/
+
+#h6m{
+    margin-left: 10px;
+}
+
+/*----------contact----------------*/
+
+#contact_details{
+	width:100%;
+	min-height:200px;
+	background:#fff;
+	padding:30px 60px;
+	text-align:center;
+	float:left;
+}
+#contact_details h1{
+	margin-bottom:50px;
+	
+}
+#contact_details h1 span{
+	border-bottom:5px solid red;
+	padding-bottom:10px;
+	
+}
+.details_info{
+	width:30%;
+	min-height:150px;
+	/* border:1px solid red; */
+	float:left;
+	margin-left:2.5%;
+	text-align:center;
+	padding:30px;
+}
+.details_info i{
+	margin-bottom:20px;
+}
+#contact_info{
+	width:100%;
+	min-height:250px;
+	padding:30px 60px;
+	background:#f4f4f4;
+	float:left;
+	/* border:1px solid red; */
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  #submit_button {
+    background-color: #B22222;
+    height: 30px;
+    width: 20%;
+    color: #FFFFFF;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    background-color: #D3D3D3;
+    color: #2F4F4F;
+    width: 250px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 2px 2px #696969;
+  }
+
+  #container3{
+     /* text-align: center;*/
+      margin-left: 100px;
+  }

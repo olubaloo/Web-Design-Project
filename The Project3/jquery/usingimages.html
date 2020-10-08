@@ -1,0 +1,43 @@
+<html>
+<head>
+
+	<title>
+			Using images
+	</title>
+	<script src="jquery.min.js"></script>
+</head>
+
+<body>
+
+	<div>
+		<div id="bulbbox">
+		<img id="mybulb" src="images/whitebulb.png"/><br>
+		</div>
+		<div style>
+		<button id="switchon">Switch on</button>
+		<button id="switchoff">Switch off</button>
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+		
+			//get the switchon and add on click event
+			$("#switchon").click(function(){
+			$("#mybulb").attr("src", "images/yellowbulb.png");
+			
+			});
+			
+			//get the switchoff and add on click event
+			$("#switchoff").click(function(){
+			$("#mybulb").attr("src", "images/whitebulb.png");
+		
+			});
+		
+		});
+
+	</script>
+
+</body>
+
+</html>

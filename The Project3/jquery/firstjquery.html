@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>
+		First JQuery
+</title>
+
+	<script src="jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+		<div id="screen" style="height:150px; width:150px; background-color:blue; color:white;">
+		
+		</div>
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
+	<script>
+	
+			$(function(){
+			
+				$("#screen").html("Dare");
+			
+				//alert("I am learning JQ");
+				//1. normal way
+				/*$("#hide").click(function (){
+					//$("#screen").hide();
+					//$("#screen").fadeOut(2000);
+				});*/
+				
+				$("#show").click(function (){
+					$("#screen").show();
+				
+				});
+				
+				//2. abnormal way
+				
+				$("#hide").click(function(){
+				
+					//$("#screen").css("display", "none");
+					$("#screen").css({"height": "200px","width": "200px", "background-color": "orange"});
+				
+				});
+				
+				$("#hide").mouseenter(function(){
+					$(this).css({"background-color": "red"});
+				});
+				
+				$("#hide").mouseleave(function(){
+					$(this).css({"background-color": ""});
+					
+				});	
+			});
+	
+	
+	
+	</script>
+
+</body>
+
+</html>

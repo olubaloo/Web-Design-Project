@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Jquery class work</title>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+
+	<span id="bad"></span>
+
+		<textarea id="yourtext" rows="20" col="50" style="height:200px; width:200px; border:1px solid black; line-height:70px; padding-top:40px; padding-left:40px;">
+		</textarea><br><br>
+		<button id="send">Send</button>
+		<button id="hide">Hide</button>
+		<button id="show">Show</button>
+		<button id="reset">Reset</button><br><br>
+		<textarea id="yourtext2" rows="20" col="50" style="height:200px; width:200px; border:1px solid black; line-height:70px; padding-top:40px; padding-left:40px;">
+		</textarea>
+
+	<script>
+
+		$(function(){
+		
+		$("#send").click(function(){
+		//get the text in the first textarea
+		var y = $("#yourtext").val();
+		
+		//put the text in the second textarea
+		$("#yourtext2").val(y);
+		
+		//empty the text in the first textarea
+		$("#yourtext").val("");
+		
+		});
+		
+		$("#hide").click(function(){
+		$("#yourtext").hide();
+		
+		});
+		
+		$("#show").click(function(){
+		$("#yourtext").show();
+		
+		});
+		
+		$("#reset").click(function(){
+		$("#yourtext").val("");
+		$("#yourtext2").val("");
+		
+		});
+
+
+	});
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+jQuery(function($) {
+
+
+/* ----- Main Menu ----- */
+	
+	if($().superfish) {
+		$("#header nav > ul").superfish({
+			delay: 150, // delay on mouseout 
+	        animation: { opacity:'show',height:'show' }, // fade-in and slide-down animation 
+	        speed: 'fast', // faster animation speed 
+	        autoArrows: false, // disable generation of arrow mark-up 
+	        dropShadows: false
+		});
+	}
+	
+	if($().mobileMenu) {
+		$('#navigation nav').each(function(){
+			$(this).mobileMenu();
+		});
+	}
+
+	$("#attention button").click(function(){
+		$("#attention .container").slideToggle(300);
+	});
+	$(".menu .sub-menu a").live('click', function(){
+		var button = $(this);
+		var title = button.attr('title').split("-");
+		if(title[0] == 'skin'){
+
+			document.cookie = 'themeple_skin='+title[1] ; 
+			setTimeout(function(){
+								    window.location.hash = "#wpwrap";
+						 			window.location.reload(true);
+								
+             }, 1000);
+
+		}
+	});
+
+
+
+/* ----- Twitter Feed ----- */
+	
+	if($().tweet) {
+		$(".widget_twitter div").tweet({
+			username: "envato",
+			join_text: "auto",
+			avatar_size: 0,
+			count: 2,
+			auto_join_text_default: "",
+			auto_join_text_ed: "",
+			auto_join_text_ing: "",
+			auto_join_text_reply: "",
+			auto_join_text_url: "",
+			loading_text: "loading tweets..."
+	    });
+	}
+	
+	
+	
+/* ----- Carousels & Sliders ----- */
+
+	if($().liquidcarousel) {
+		$('.carousel').each(function(){
+			var self = this;
+			if( $('li:first img', self).size() ) {
+	  			$('li:first img', self).one("load", function(){
+	  				$(self).liquidcarousel({
+	  					duration: 300
+	  				});
+	  			}).each(function() {
+	  		    	if(this.complete) $(this).trigger("load");
+	  			});
+			} else {
+				$(self).liquidcarousel({
+	  				duration: 300
+	  			});
+			}
+		});
+	}
+		
+	// flexslider
+	if($().flexslider) {
+		$('#slider-animated .flexslider').flexslider({
+			animationSpeed: 400,
+			animation: "fade",
+			directionNav: true,
+			pauseOnAction: true,
+			pauseOnHover: false
+		});
+		
+		$('.flexslider').flexslider({
+			animationSpeed: 400,
+			animation: "fade",
+			controlNav: false,
+			pauseOnAction: true,
+			pauseOnHover: false
+		});
+	}
+	
+	// parallax content slider
+	if($().cslider) {
+		$('#da-slider').cslider({
+			bgincrement	: 0,
+			current: 0,
+			autoplay: true,
+			interval: 6000
+		});
+	}
+	
+	
+	
+/* ----- Portfolio ----- */
+
+	$("#portfolio-filter a").click(function(){
+		$("#portfolio-filter a.active").removeClass("active");
+		$(this).addClass("active");
+
+		p_filter = $(this).attr("href").substr(1);
+
+		$("#portfolio-preview-items dl").each(function(){
+			p_property = $(this).attr("rel");
+			if(p_property.indexOf(p_filter) >= 0 && p_filter != "all") {
+				$(this).fadeTo(300, 1);
+			} else if(p_filter != "all") {
+				$(this).fadeTo(300, 0.05);
+			} else {
+				$(this).fadeTo(300, 1);
+			}
+		});
+	});
+	
+	
+	
+/* ----- Shortcodes ----- */	
+	
+    $('.accordion').on('show', function(e) {
+         $(e.target).prev('.accordion-heading').find('.accordion-toggle').addClass('collapsed');
+    });
+
+    $('.accordion').on('hide', function(e) {
+        $(this).find('.accordion-toggle').not($(e.target)).removeClass('collapsed');
+    });
+
+
+
+/* ----- Forms ----- */	
+
+	
+	
+});

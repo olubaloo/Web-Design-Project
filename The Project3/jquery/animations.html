@@ -1,0 +1,37 @@
+<html>
+<head>
+
+	<title>
+			Using images
+	</title>
+	<script src="jquery.min.js"></script>
+</head>
+
+<body>
+	<div id="screen" style="height:200px; width:200px; background-color:red; margin-bottom:20px;"></></div><br><br>
+	<button id="animatebutt" style="height:40px; width:120px; background-color:blue;">Animate</button>
+	
+
+	<script>
+		$(function(){
+		
+			$("#animatebutt").click(function(){
+			
+				$("#screen").animate({"height": "300px", "margin-top" : "100px"}, 2000);
+					$("#screen").css("background-color", "green")
+			
+				$("#screen").animate({"width": "300px", "margin-left": "100px"}, 2000, function(){
+				
+						$("#animatebutt").text("Animation Completed");
+				});
+				
+			});
+			
+		
+		});
+
+	</script>
+
+</body>
+
+</html>
